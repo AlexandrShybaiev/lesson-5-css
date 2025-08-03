@@ -1,0 +1,133 @@
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:30px 0px 12px 0px;
+}
+.body{
+    background: #FFFFFF;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.logo__text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #46A358;
+    cursor: pointer;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #3D3D3D;
+    line-height: 20px;
+}
+
+/* Кнопка логина */
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    background: #46A358;
+    border-radius: 6px;
+    gap: 4px;
+    padding: 8px 16px 8px 25px;
+    cursor: pointer;
+    line-height: 20px;
+
+}
+.login_btn {
+    width: 20px;
+    height: 20px;
+}
+
+.section1 .container{
+    background: linear-gradient(97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%);
+}
+.section1 .left_side{
+    max-width: 650px;
+    font-family: Cera Pro;
+    padding: 68px 0 85px 40px ;
+    /*flex: 1;*/
+    /*z-index: 2;*/
+    h3{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        color: #3D3D3D;
+        margin-bottom: 8px;
+    }
+    h1{
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: #3D3D3D;
+        margin-bottom: 5px;
+    }
+    span{
+        color: #46A358;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #727272;
+        margin-bottom: 44px;
+    }
+}
+.btn{
+    border-radius: 6px;
+    background: #46A358;
+    padding: 11px 26px 9px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/*Правая часть*/
+.right_side{
+    margin-right: 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.vazon{
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+    max-width: 507px;
+    z-index: 2;
+}
+.vazon_mini{
+    position: absolute;
+    bottom: 15px;
+    right: 180px;
+    max-width: 135px;
+    z-index: 1;
+}
+
