@@ -1,23 +1,39 @@
 .container{
     max-width: 1200px;
     margin:0 auto;
-    padding:30px 0px 12px 0px;
+    padding:30px 0 12px 0;
 }
-.body{
+body{
     background: #FFFFFF;
+    font-family: 'Cera Pro', sans-serif;
 }
-
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    display: block;
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+    max-width: 1200px;
+    font-size: 0;
+    vertical-align: middle;
+}
+.logo,
+.menu,
+.login {
+    display: inline-block;
+    vertical-align: middle; /* выравнивание по вертикали */
+    font-size: 16px; /* возвращаем текстовый размер */
+}
+.menu .li{
+    margin: 0 10px;
 }
 .logo {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    gap: 8px;
+    /*gap: 8px;*/
     cursor: pointer;
+    width: 30%;
+
 }
 
 .logo__text {
@@ -25,13 +41,25 @@
     font-weight: bold;
     color: #46A358;
     cursor: pointer;
+    vertical-align: middle;
+    /*margin-right: 230px;*/
+}
+.logo img,
+.logo__text {
+    display: inline-block;
+    vertical-align: middle; /* выравниваем по одной линии */
 }
 
 /* Меню */
 .menu {
-    display: flex;
-    gap: 50px;
+    /*gap: 50px;*/
     list-style: none;
+    width: 60%;
+    vertical-align: middle;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .menu li a {
@@ -42,22 +70,28 @@
 
 /* Кнопка логина */
 .login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    width: 10%;
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    /*align-items: center;*/
     color: #FFFFFF;
     background: #46A358;
     border-radius: 6px;
-    gap: 4px;
+    /*gap: 4px;*/
     padding: 8px 16px 8px 25px;
     cursor: pointer;
     line-height: 20px;
-
 }
 .login_btn {
     width: 20px;
     height: 20px;
 }
+.login img,.login_btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 
 .section1 .container{
     background: linear-gradient(97.77deg,
@@ -66,7 +100,6 @@
 }
 .section1 .left_side{
     max-width: 650px;
-    font-family: Cera Pro;
     padding: 68px 0 85px 40px ;
     /*flex: 1;*/
     /*z-index: 2;*/
@@ -107,27 +140,25 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
-
-/*Правая часть*/
-.right_side{
-    margin-right: 120px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+.left_side {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top; /* чтобы выровнять верхушки блоков */
 }
-.vazon{
-    position: absolute;
-    bottom: 0;
-    right: -150px;
+
+.right_side {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.vazon_mini {
+    max-width: 1px;
+}
+.vazon {
     max-width: 507px;
-    z-index: 2;
 }
-.vazon_mini{
-    position: absolute;
-    bottom: 15px;
-    right: 180px;
-    max-width: 135px;
-    z-index: 1;
-}
+
+
+
 
